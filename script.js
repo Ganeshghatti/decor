@@ -67,5 +67,34 @@ function rightarrowf(){
     }
 }
 
-//divforbgimgandnavbar.removeAttribute("class")
-//divforbgimgandnavbar.setAttribute("class", "bgthree");
+// HAMBURGER ICON
+
+let hamburgericondivm=document.getElementsByClassName("hamburgericondivm")[0]
+let cancelicondivm=document.getElementsByClassName("cancelicondivm")[0]
+let navbarm=document.getElementsByClassName("navbarm")[0]
+let overlay=document.getElementsByClassName("overlay")[0]
+
+hamburgericondivm.addEventListener("click",hamburgericonf)
+cancelicondivm.addEventListener("click",canceliconf)
+overlay.addEventListener("click",overlayf)
+
+function hamburgericonf(){
+    navbarm.style.display="flex"
+    cancelicondivm.style.display="block"
+    overlay.style.display="block"
+    hamburgericondivm.style.display="none"
+}
+
+function canceliconf(){
+    navbarm.style.display="none"
+    cancelicondivm.style.display="none"
+    overlay.style.display="none"
+    hamburgericondivm.style.display="block"
+}
+
+function overlayf(){
+    navbarm.style.display="none"
+    cancelicondivm.style.display="none"
+    overlay.style.display="none"
+    hamburgericondivm.style.display="block"
+}

@@ -3,17 +3,20 @@
     margin: 0;
     font-family: 'League Spartan', sans-serif;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.firstrow{
+
+.firstrow {
     display: flex;
     justify-content: center;
     /* border: 2px red solid; */
 }
+
 #divforbgimgandnavbar {
     display: flex;
     gap: 7vw;
@@ -24,55 +27,69 @@
     /* border: 2px red solid; */
     /*IMG DIMENSIONS height: 800 px width: 1440 px */
 }
+
 #divforbgimgandnavbar ul li a {
     text-decoration: none;
     color: white;
 }
+
 #divforbgimgandnavbar ul li {
     list-style: none;
 }
-.navbar ul{
+
+#divforbgimgandnavbar ul li a:hover {
+    text-decoration: underline white 2px;
+}
+
+.navbar ul {
     display: flex;
     flex-direction: row;
-    gap:2vw;
+    gap: 2vw;
     font-weight: 600;
 }
+
 .bgone {
-    background-image: url('desktop-image-hero-1.jpg');
+    background-image: url('/desktop-image-hero-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .bgtwo {
-    background-image: url('desktop-image-hero-2.jpg');
+    background-image: url('/desktop-image-hero-2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .bgthree {
-    background-image: url('desktop-image-hero-3.jpg');
+    background-image: url('/desktop-image-hero-3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 
-.detailsanddescription{
+.detailsanddescription {
     /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     width: 41vw;
 }
-.detailsanddescription div{
-    margin:auto;
+
+.detailsanddescription div {
+    margin: auto;
 }
-.detailsdescriptionbox{
+
+.detailsdescriptionbox {
     display: flex;
     flex-direction: column;
 }
-.setone,.settwo,.setthree,.shopnowicon{
+
+.setone,
+.settwo,
+.setthree,
+.shopnowicon {
     /* padding: 2rem 4rem 1rem 4rem; */
     padding: 2vw 5vw 1vw 5vw;
     /* border: 2px solid red; */
@@ -80,24 +97,34 @@
     flex-direction: column;
     gap: 2rem;
 }
-.settwo,.setthree{
+
+.settwo,
+.setthree {
     display: none;
 }
-.titleonetext,.titletwotext,.titlethreetext{
+
+.titleonetext,
+.titletwotext,
+.titlethreetext {
     font-size: clamp(1.3rem, 3vw, 3rem);
     font-weight: 600;
     /* border: 2px solid red; */
 }
-.descriptiononetext,.descriptiontwotext,.descriptionthreetext{
+
+.descriptiononetext,
+.descriptiontwotext,
+.descriptionthreetext {
     font-size: clamp(0.9rem, 1.4vw, 1rem);
     font-weight: 400;
     color: grey;
 }
-.leftrightarrowparent{
+
+.leftrightarrowparent {
     display: flex;
     width: 41vw;
 }
-.leftrightarrow{
+
+.leftrightarrow {
     display: flex;
     flex-direction: row;
     background-color: black;
@@ -107,138 +134,223 @@
     position: absolute;
     top: 48.5vh;
 }
-.leftarrow{
+
+.leftarrow {
     /* padding: 0 0 0 1rem; */
     cursor: pointer;
 }
-.rightarrow{
+
+.rightarrow {
     /* padding: 0 1rem 0 0; */
     cursor: pointer;
 }
-.shopnowicon{
+
+.shopnowicon {
     padding: 0;
     letter-spacing: 0.5rem;
     padding-bottom: 2.5rem;
 }
+
 .shopnowicon .shopnowtext {
     text-decoration: none;
     color: black;
     font-weight: 500;
 }
 
-.secondrow{
+.shopnowicon .shopnowtext:hover {
+    color: grey;
+}
+
+.secondrow {
     display: flex;
     flex-direction: row;
     width: 95.5vw;
     justify-content: center;
     /* margin-left: 2.25vw; */
 }
-.firstimginsecondrow,.thirdimginsecondrow{
+
+.firstimginsecondrow,
+.thirdimginsecondrow {
     width: 30.5vw;
 }
-.headdinginsecondrowseconddiv{
+
+.headdinginsecondrowseconddiv {
     font-size: clamp(0.2rem, 2vw, 1.3rem);
     font-weight: 600;
     letter-spacing: 0.3rem;
 }
-.seconddivinsecondrow{
-    padding:2vw 3vw 0 3vw;
+
+.seconddivinsecondrow {
+    padding: 2vw 3vw 0 3vw;
     display: flex;
     flex-direction: column;
     gap: 1.7vw;
     font-weight: 400;
 }
-.descriptioninsecondrowsecondpage{
+
+.descriptioninsecondrowsecondpage {
     font-size: clamp(0.4rem, 1.2vw, 1rem);
     color: grey;
 }
+
+.navbarm nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.navbarm nav ul li {
+    list-style: none;
+    z-index: 10;
+}
+
+.navbarm {
+    padding: 6vw 0 6vw 15vw;
+}
+
+.navbarm ul {
+    display: flex;
+    flex-direction: row;
+    gap: 6vw;
+}
+
+.hamburgericondivm,
+.cancelicondivm {
+    cursor: pointer;
+}
+
+.hamburgericondivm {
+    padding: 0 0 0 5vw;
+}
+
+.cancelicondivm {
+    position: absolute;
+    left: 8vw;
+    top: 6vw;
+}
+
+.hamburgericondivm,
+.cancelicondivm,
+.navbarm {
+    display: none;
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+    display: none;
+}
+
+
 @media screen and (max-width: 42rem) {
-    .container,.firstrow,.secondrow{
+
+    .container,
+    .firstrow,
+    .secondrow {
         width: 100vw;
         flex-wrap: wrap;
         padding: 0;
         align-items: center;
     }
-    .container{
+
+    .container {
         display: flex;
         justify-content: center;
     }
-    .navbar{
+
+    .navbar {
         display: none;
     }
-    .bgone,.bgtwo,.bgthree{
+
+    .bgone,
+    .bgtwo,
+    .bgthree {
         background-size: cover;
         background-position: center;
         width: 100vw;
     }
-    #divforbgimgandnavbar{
+
+    #divforbgimgandnavbar {
         width: 100vw;
         height: 57vw;
-        justify-content: center;
+        justify-content: flex-start;
+        gap: 35vw;
+        padding-top: 4vw;
     }
-    .detailsanddescription{
+
+    .detailsanddescription {
         padding-top: 8vw;
         width: 100vw;
         margin: auto;
         margin: 0;
     }
-    .setone,.settwo,.setthree{
+
+    .setone,
+    .settwo,
+    .setthree {
         padding: 0 10vw;
         margin: 0;
     }
-    .shopnowtext{
+
+    .shopnowtext {
         padding: 10vw 0 0 0;
         font-size: clamp(0.8rem, 1vw, 3rem);
     }
-    .titleonetext,.titletwotext,.titlethreetext{
+
+    .titleonetext,
+    .titletwotext,
+    .titlethreetext {
         font-size: clamp(1.3rem, 6vw, 3rem);
         padding: 0 5vw 0 0;
     }
-    .descriptiononetext,.descriptiontwotext,.descriptionthreetext{
+
+    .descriptiononetext,
+    .descriptiontwotext,
+    .descriptionthreetext {
         font-size: clamp(0.9rem, 3vw, 1.5rem);
     }
-    .firstimginsecondrow,.thirdimginsecondrow,.detailsanddescription{
+
+    .firstimginsecondrow,
+    .thirdimginsecondrow,
+    .detailsanddescription {
         width: 100vw;
         margin: auto;
     }
-    .descriptioninsecondrowsecondpage,.headdinginsecondrowseconddiv{
+
+    .descriptioninsecondrowsecondpage,
+    .headdinginsecondrowseconddiv {
         padding: 0 10vw;
     }
-    .headdinginsecondrowseconddiv{
+
+    .headdinginsecondrowseconddiv {
         font-size: clamp(0.2rem, 7vw, 3rem);
     }
-    .descriptioninsecondrowsecondpage{
+
+    .descriptioninsecondrowsecondpage {
         font-size: clamp(0.4rem, 4.5vw, 2rem);
     }
-    .seconddivinsecondrow{
-        padding:10vw 5vw;
+
+    .seconddivinsecondrow {
+        padding: 10vw 5vw;
         gap: 10vw;
     }
-    .leftrightarrow{
-        gap:1.5vw;
+
+    .leftrightarrow {
+        gap: 1.5vw;
         font-size: 1.5vw;
         width: 28vw;
         top: 49vw;
         left: 72vw;
         padding: 2vw 0;
     }
+
+    .hamburgericondivm {
+        display: block;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
