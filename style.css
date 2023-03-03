@@ -49,21 +49,21 @@
 }
 
 .bgone {
-    background-image: url('/desktop-image-hero-1.jpg');
+    background-image: url('desktop-image-hero-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .bgtwo {
-    background-image: url('/desktop-image-hero-2.jpg');
+    background-image: url('desktop-image-hero-2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .bgthree {
-    background-image: url('/desktop-image-hero-3.jpg');
+    background-image: url('desktop-image-hero-3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
